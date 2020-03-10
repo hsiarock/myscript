@@ -1,0 +1,11 @@
+{
+  "name": "local-console-sink",
+  "config": {
+      "topics": "connect-test",
+      "connector.class": "org.apache.kafka.connect.file.FileStreamSinkConnector",
+      "tasks.max": 1,
+      "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+      "value.converter": "org.apache.kafka.connect.storage.StringConverter",
+      "file": "C:/Users/Owner/temp/demo-file.txt"
+    }
+}

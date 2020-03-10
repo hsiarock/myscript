@@ -1,0 +1,2 @@
+
+curl -X POST -H "Content-Type: application/json" --data '{ "name": "quickstart-jdbc-source", "config": { "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector", "tasks.max": 1, "connection.url":"jdbc:mysql://10.0.0.2:3306/indigo?user=david&password=alexgo12", "mode": "incrementing", "incrementing.column.name": "id", "timestamp.column.name": "modified", "topic.prefix": "quickstart-avro-", "poll.interval.ms": 1000 } }' http://10.0.0.3:28083/connectors
